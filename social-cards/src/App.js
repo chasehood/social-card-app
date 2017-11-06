@@ -16,7 +16,7 @@ class App extends Component {
       this.addSocialCard = this.addSocialCard.bind(this);
   }
   handleInput(e, value){
-    console.log(this.state.user)
+    console.log(this.state)
     this.setState({
       [value]: e,
     });
@@ -34,7 +34,7 @@ class App extends Component {
   }
   render() {
     const people = this.state.card.map((item,i) => {
-      return  <div key={i}>
+      return  <div className="social-card-container" key={i}>
                 <div>{item.name}</div>
                 <div>{item.age}</div>
                 <div>{item.location}</div>
@@ -45,21 +45,21 @@ class App extends Component {
           <div className="social-card-form">
             <input 
             onChange={(e) => { this.handleInput(e.target.value, 'name') }} 
-            placeholder="Name" 
+            placeholder="NAME" 
             type="text" 
             name="name" 
             id="name" 
             />
             <input 
             onChange={(e) => { this.handleInput(e.target.value, 'age') }} 
-            placeholder="Age" 
+            placeholder="AGE" 
             type="text" 
             name="age" 
             id="age" 
             />
             <input 
             onChange={(e) => { this.handleInput(e.target.value, 'location') }} 
-            placeholder="City" 
+            placeholder="CITY" 
             type="text" 
             name="location" 
             id="location" 
@@ -70,7 +70,7 @@ class App extends Component {
             Submit
             </button>  
           </div>
-          <div className="social-card-container">
+          <div className="card-container">
             {people}
           </div>
       </div>

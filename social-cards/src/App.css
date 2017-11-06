@@ -1,4 +1,9 @@
-.social-card-form, .social-card-container {
+.App{
+  display: flex;
+  justify-content: space-around
+}
+.social-card-form,
+.social-card-container {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -7,15 +12,24 @@
   box-shadow: 5px 5px 10px #888888;
   border: 1px solid #999;
 }
-.social-card-form{
-  margin: 5%;
-}
-.social-card-container{
-float: right;
-margin: 5%;
+.card-container{
+  display:flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
 }
 
-input, .form-submit{
+/*.social-card-form {
+  margin: 5%;
+}*/
+
+.social-card-container {
+  /*float: right;
+  margin: 5%;*/
+  margin: 20px;
+}
+
+input,
+.form-submit {
   font-size: 15px;
   border-radius: 5px;
   height: 25px;
@@ -23,7 +37,8 @@ input, .form-submit{
   text-align: center;
   width: 50%;
 }
-.form-submit{
+
+.form-submit {
   background-color: lightblue;
   margin: 0 auto;
   text-align: center;
