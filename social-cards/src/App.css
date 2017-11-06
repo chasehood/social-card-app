@@ -1,0 +1,31 @@
+.social-card-form, .social-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 33vw;
+  height: 28vh;
+  box-shadow: 5px 5px 10px #888888;
+  border: 1px solid #999;
+}
+.social-card-form{
+  margin: 5%;
+}
+.social-card-container{
+float: right;
+margin: 5%;
+}
+
+input, .form-submit{
+  font-size: 15px;
+  border-radius: 5px;
+  height: 25px;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+.form-submit{
+  background-color: lightblue;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
